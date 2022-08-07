@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBFF49F6-6D5A-44A6-8168-43C7C5C0707B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_QuanCaPhe</RootNamespace>
+    <AssemblyName>QL_QuanCaPhe</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>abc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoUong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoUong.Designer.cs">
+      <DependentUpon>frmDoUong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiDoUong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiDoUong.Designer.cs">
+      <DependentUpon>frmLoaiDoUong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThanhToan1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThanhToan1.Designer.cs">
+      <DependentUpon>frmThanhToan1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKeHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeHD.Designer.cs">
+      <DependentUpon>frmThongKeHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKePN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKePN.Designer.cs">
+      <DependentUpon>frmThongKePN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatHD.Designer.cs">
+      <DependentUpon>frmXuatHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatPN.Designer.cs">
+      <DependentUpon>frmXuatPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_QUANCAPHEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAPHEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_QUANCAPHEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAPHEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_QUANCAPHEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAPHEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_QUANCAPHEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAPHEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_QUANCAPHEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_QUANCAPHEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoUong.resx">
+      <DependentUpon>frmDoUong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiDoUong.resx">
+      <DependentUpon>frmLoaiDoUong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThanhToan1.resx">
+      <DependentUpon>frmThanhToan1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeHD.resx">
+      <DependentUpon>frmThongKeHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKePN.resx">
+      <DependentUpon>frmThongKePN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatHD.resx">
+      <DependentUpon>frmXuatHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatPN.resx">
+      <DependentUpon>frmXuatPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="abc.xsc">
+      <DependentUpon>abc.xsd</DependentUpon>
+    </None>
+    <None Include="abc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>abc.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="abc.xss">
+      <DependentUpon>abc.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_QUANCAPHEDataSet.xsc">
+      <DependentUpon>QL_QUANCAPHEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAPHEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet.xss">
+      <DependentUpon>QL_QUANCAPHEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet1.xsc">
+      <DependentUpon>QL_QUANCAPHEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAPHEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet1.xss">
+      <DependentUpon>QL_QUANCAPHEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet2.xsc">
+      <DependentUpon>QL_QUANCAPHEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAPHEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet2.xss">
+      <DependentUpon>QL_QUANCAPHEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet3.xsc">
+      <DependentUpon>QL_QUANCAPHEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAPHEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet3.xss">
+      <DependentUpon>QL_QUANCAPHEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet4.xsc">
+      <DependentUpon>QL_QUANCAPHEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_QUANCAPHEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_QUANCAPHEDataSet4.xss">
+      <DependentUpon>QL_QUANCAPHEDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{a69644b3-bc76-4cc7-8260-d76e6f57b0ad}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{59c6ca13-ab0a-448d-af00-95257906a49b}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POJO\POJO.csproj">
+      <Project>{30152bd9-f586-45b5-bf78-93e29379fee2}</Project>
+      <Name>POJO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
